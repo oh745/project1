@@ -1,0 +1,94 @@
+{
+  "restaurantList": [
+
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"},
+{
+  "restaurantName": "Salmon",
+  "restaurantImagePath": "image/2/2.jpg",
+  "restaurantId": "2",
+  "restaurantStatus": "1",
+  "distanceDelivery": "5000",
+  "lat": "23.5544456",
+  "lng": "65.4455566"}
+]
+ 
+}

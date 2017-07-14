@@ -1,0 +1,10 @@
+-  request:
+      method: POST
+      url: /searchData.php
+      post: '{"foodName":"A"}'
+   response:
+      status: 200
+      headers:
+         content-type: application/json
+      file: request.json
+
