@@ -4,17 +4,18 @@ package com.example.preedaphongr.projecttest.presenter;
 import android.content.Context;
 import android.util.Log;
 
-import com.example.preedaphongr.projecttest.model.Restaurant;
+import com.example.preedaphongr.projecttest.MyApplication;
 import com.example.preedaphongr.projecttest.model.SearchRequest;
 import com.example.preedaphongr.projecttest.model.SearchResponse;
+import com.example.preedaphongr.projecttest.api.SearchAPI;
 import com.example.preedaphongr.projecttest.service.SearchService;
 import com.example.preedaphongr.projecttest.util.RetrofitSearch;
+
+import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 
 /**
@@ -26,6 +27,8 @@ public class SearchPresenter {
     private View view;
     private Context context;
 
+    @Inject
+    private SearchService searchService;
 
     public interface View{
         void showRestaurant(SearchResponse searchResponse);
@@ -37,9 +40,9 @@ public class SearchPresenter {
     }
 
     public void sendSearchRequest(String word){
-        SearchService git = RetrofitSearch.getRetrofit().create(SearchService.class);
-        Call call = git.getUser(new SearchRequest(word));
-        call.enqueue(new Callback<SearchResponse>() {
+        //SearchAPI git = RetrofitSearch.getRetrofit().create(SearchAPI.class);
+        //Call call = git.getRestaurant(new SearchRequest(word));
+        searchService.loadRestaurant(new SearchRequest(word)).enqueue(new Callback<SearchResponse>() {
             @Override
             public void onResponse(Call<SearchResponse> call, Response<SearchResponse> response) {
                 if(response.isSuccessful()){

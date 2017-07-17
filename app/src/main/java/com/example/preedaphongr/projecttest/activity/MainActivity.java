@@ -6,24 +6,17 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.widget.SearchView;
-import android.widget.Toast;
 
+import com.example.preedaphongr.projecttest.MyApplication;
 import com.example.preedaphongr.projecttest.R;
 import com.example.preedaphongr.projecttest.adapter.SearchAdapter;
+import com.example.preedaphongr.projecttest.component.NetComponent;
 import com.example.preedaphongr.projecttest.model.Restaurant;
-import com.example.preedaphongr.projecttest.model.SearchRequest;
 import com.example.preedaphongr.projecttest.model.SearchResponse;
 import com.example.preedaphongr.projecttest.presenter.SearchPresenter;
-import com.example.preedaphongr.projecttest.service.SearchService;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements SearchPresenter.View {
 
@@ -37,7 +30,8 @@ public class MainActivity extends AppCompatActivity implements SearchPresenter.V
         //restaurantList.add(new Restaurant("dddd","dddd","dddd","dddd","ddd","ddd","ddd"));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final SearchPresenter presenter = new SearchPresenter(this, getBaseContext());
+        final SearchPresenter presenter = new SearchPresenter(this, this);
+        ((MyApplication) getApplication()).getNetComponent().inject(this);
 
         SearchView searchView = (SearchView) findViewById(R.id.searchView);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
