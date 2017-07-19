@@ -14,6 +14,15 @@ public class Restaurant {
     private String distanceDelivery;
     private String lat;
     private String lng;
+    private boolean show;
+
+    public boolean isShow() {
+        return show;
+    }
+
+    public void setShow(boolean show) {
+        this.show = show;
+    }
 
     public Restaurant(String restaurantName, String restaurantImagePath, String restaurantId, String restaurantStatus, String distanceDelivery, String lat, String lng) {
         this.restaurantName = restaurantName;
@@ -23,6 +32,8 @@ public class Restaurant {
         this.distanceDelivery = distanceDelivery;
         this.lat = lat;
         this.lng = lng;
+        show = false;
+
     }
 
     public String getRestaurantName() {

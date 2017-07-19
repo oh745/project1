@@ -13,7 +13,7 @@ public class RetrofitSearch {
     private static Retrofit retrofit;
     static{
         retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.215.136.168/")
+                .baseUrl("http://10.215.136.219/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
     }
